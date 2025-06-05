@@ -225,7 +225,6 @@ job_history.columns = ['name', 'instance_id', 'step_id', 'step_name', 'run_datet
 merged = pd.merge(extractlog, job_history, how='right', left_on='DataSource', right_on='step_name')
 merged_list = merged.values.tolist()
 
-print(merged_list)
 # ---------------------------------------------------------------------------------------------------
 divider = "-----------------------------------------------"
 title_message = f"\n📚 **Job Name :** {job_name} \n" + f"📆 **Runtime :** {run_time[0:5]} \n"  + f"⏩ **Next Runtime :** {next_time[0:5]} \n" + f"⌛ **Duration_time :** {rows_fw[0][5]} \n{divider}\nStatus : {status_runtime[0]}\nUser : {source_run[0]}\nETL Runtime : {etl_runtime}\n{divider} "
