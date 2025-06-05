@@ -1,0 +1,2 @@
+$env:PYTHONIOENCODING = "utf-8"
+Start-Process -FilePath "C:\python\python.exe" -ArgumentList '"C:\Python_script\Line_notic\UAT\ETL_CussatEHPv2_EVAUsageV2AllRating_UAT\ETL_CussatEHPv2_EVAUsageV2AllRating_UAT.py"' -WindowStyle Hidden
